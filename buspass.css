@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
 
 *{
     box-sizing: border-box;
@@ -10,7 +10,7 @@ body{
     max-width: 414px;
     max-height: 896px;
     color: var(--westar);
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Radio Canada', sans-serif;
     background-color: var(--firefly);
 }
 
@@ -34,7 +34,7 @@ nav{
 }
 
 .grid-item {
-padding: 10px;
+    padding: 10px;
 }
 .nav-lists li{
     list-style: none;
