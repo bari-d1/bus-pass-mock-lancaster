@@ -2,7 +2,12 @@ let valid_date = document.getElementById("date");
 let time = document.getElementById("time");
 let timer = document.getElementById("timer");
 let id_date = document.getElementById("id_date");
-let date = new Date("21 May 2022");
+let date = new Date();
+let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
+let today_day = date.getDate() -1;
+let today_month = months[date.getMonth()];
+let today_year =  date.getFullYear();
+console.log(today_day + today_month + today_year);
 let newDate = new Date();
 let t;
 console.log(date);
@@ -17,14 +22,14 @@ let getminutes = newDate.getMinutes();
 }else{
     t = gethours + ":" + getminutes;
 }
-valid_date.innerHTML = date.toDateString();
+valid_date.innerHTML = today_day + " " + today_month + " " + today_year;
 time.innerHTML = t; 
 next_week = newDate.setDate(newDate.getDate() + 6);
 console.log(next_week);
 var countDownDate = new Date(next_week).getTime();
 const id_year = date.getFullYear() * 1e4; // 1e4 gives us the the other digits to be filled later, so 20210000.
 const id_month = (date.getMonth() + 1) * 100; // months are numbered 0-11 in JavaScript, * 100 to move two digits to the left. 20210011 => 20211100
-const id_day = date.getDate(); // 20211100 => 20211124
+const id_day = date.getDate()-1; // 20211100 => 20211124
 const result = id_year + id_month + id_day + '' // `+ ''` to convert to string from number, 20211124 => "20211124"
 id_date.innerHTML = result;
 
