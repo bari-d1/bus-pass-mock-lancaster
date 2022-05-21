@@ -1,6 +1,6 @@
 {
   "display": "standalone",
-  "start_name": "Lancaster Bus Pass",
+  "short_name": "Lancaster Bus Pass",
   "icons": [
     {
       "src": "img/manifest-icon-192.maskable.png",
