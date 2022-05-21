@@ -2,7 +2,7 @@ let valid_date = document.getElementById("date");
 let time = document.getElementById("time");
 let timer = document.getElementById("timer");
 let id_date = document.getElementById("id_date");
-let date = new Date("20 May 2022");
+let date = new Date("21 May 2022");
 let newDate = new Date();
 let t;
 console.log(date);
